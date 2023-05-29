@@ -1,0 +1,40 @@
+ul.tab-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 20px 20px 0 0;
+}
+
+ul.tab-menu li {
+  width: 33.3%;
+}
+
+ul.tab-menu li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.tab-menu li a:hover {
+  background-color: #ddd;
+  border-radius: 20px 20px 0 0;
+}
+
+ul.tab-menu li.active {
+  background-color: #ccc;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.tab-content.active {
+  display: block;
+}
