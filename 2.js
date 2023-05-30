@@ -1,5 +1,17 @@
 
 
+function $(sellector) {
+    const dom = document.querySelector(sellector)
+
+    return {
+        on: function (eventName, eventHandler) {
+            dom.addEventListener(eventName, eventHandler)
+        }
+    }
+    
+}
+
+
 
 
 
@@ -12,5 +24,14 @@ $btns.forEach($btn => {
 })
 
 $('#result').on('click', function(event){
-    alert(result.join(' '));
+    alert(result.join(' ')); 
 })
+
+
+const object = {
+    add: function(a) {
+        this.value += a``
+    }
+}
+
+object.add
