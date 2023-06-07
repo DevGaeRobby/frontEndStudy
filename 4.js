@@ -42,7 +42,7 @@ obj.hobbies.forEach(function (hobbie) {
   console.log(`${hobbie.id}. ${hobbie.title} - ${hobbie.discription}`);
   if (hobbie.motions) {
     hobbie.motions.forEach(function (motion, index) {
-      console.log(`3 - ${index+1} ${motion}`);
+      console.log(`3 - ${index + 1} ${motion}`);
     });
   }
 });

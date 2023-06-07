@@ -1,27 +1,27 @@
 const data = {
   tabs: [
     {
-      text: "노무현",
+      text: "탭1",
     },
     {
-      text: "문재인",
+      text: "탭2",
     },
     {
-      text: "이재명",
+      text: "탭3",
     },
   ],
   contents: [
     {
-      image: "shangus.jpg",
-      text: "노무현은 대한민국의 정치인",
+      image: "",
+      text: "탭1",
     },
     {
-      image: "answodls.jpg",
-      text: "문재인은 대한민국의 정치인",
+      image: "",
+      text: "탭2",
     },
     {
-      image: "dlwoaud.jpg",
-      text: "이재명은 대한민국의 정치인",
+      image: "",
+      text: "탭3",
     },
   ],
 };
@@ -49,7 +49,7 @@ function openTab(evt, tabIndex) {
   const text = data.contents[tabIndex].text;
 
   $content.innerHTML = `
-      <img src="${image}" alt="찢">
+      <img src="${image}" alt="이미지">
       <p>
         ${text}
       </p>

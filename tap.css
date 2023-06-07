@@ -1,28 +1,31 @@
-*{
-  margin:0; padding:0;
-  font-size:25px;
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
   font-weight: bold;
-  line-height:1.3;
+  line-height: 1.3;
 }
 
-ul{list-style:none;}
-.tabmenu{ 
-  width:800px; 
-  margin: 0 auto; 
-  position:relative; 
+ul {
+  list-style: none;
 }
-
-.tabmenu ul{
+.tabmenu {
+  width: 800px;
+  margin: 0 auto;
   position: relative;
 }
 
-.tabmenu ul li{
-  display:block;
-  width:33.33%; 
-  float:left;  
-  text-align:center; 
-  background :#523;
-  line-height:40px;
+.tabmenu ul {
+  position: relative;
+}
+
+.tabmenu ul li {
+  display: block;
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  background: #523;
+  line-height: 40px;
   border-radius: 20px 20px 0 0;
 }
 
@@ -30,42 +33,43 @@ ul{list-style:none;}
   background-color: #fff;
 }
 
-.tabmenu label{
-  display:block;
-  width:100%; 
-  height:40px;
-  line-height:40px;
-}
-
-.tabmenu input{
-  display:none;
-}
-
-.tabCon{
-  display:none; 
+.tabmenu label {
+  display: block;
   width: 100%;
-  text-align:left; 
-  padding: 20px;
-  position:absolute; 
-  left:0; top:40px; 
-  box-sizing: border-box; 
-  border : 5px solid #000;
+  height: 40px;
+  line-height: 40px;
 }
 
-.tabmenu input:checked ~ label{
-  background:#518;
+.tabmenu input {
+  display: none;
+}
+
+.tabCon {
+  display: none;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  box-sizing: border-box;
+  border: 5px solid #000;
+}
+
+.tabmenu input:checked ~ label {
+  background: #518;
   border-radius: 20px 20px 0 0;
 }
 
-.tabmenu input:checked ~ .tabCon{
-  display:block;
+.tabmenu input:checked ~ .tabCon {
+  display: block;
 }
 
-.notainer {
+.container {
   display: flex;
 }
 
-.noticle {
+.article {
   display: flex;
   width: 100%;
   height: 250px;

@@ -1,43 +1,21 @@
-const main = document.getElementsByClassName('test');
-const resultBox = [{}]
-const qna = [
-    {
-        q: `1+1=?`,
-        a: [
-            { answer: `1이다`},
-            { answer: `2다`},
-            { answer: `3이다`}
-        ]
-    },
-    {
-        q: `1+2=?`,
-        a: [
-            { answer: `1이다`},
-            { answer: `2다`},
-            { answer: `3이다`}
-        ]
-    },
-    {
-        q: `0+1=?`,
-        a: [
-            { answer: `1이다`},
-            { answer: `2다`},
-            { answer: `3이다`}
-        ]
-    }
-]
-
-main.addEventListener('click', function (event) {
-    const id = event.target.id;
-
-    if (id === "answer1") {
-        //resultBox에 answer1의 문자열 push하고
-        //question innerText 변경 answer1,2,3 innerText 변경
-    } else if (id === "answer2") {
-        //resultBox에 answer1의 문자열 push하고
-        //question innerText 변경 answer1,2,3 innerText 변경
-    } else if (id === "answer3") {
-        //resultBox에 answer1의 문자열 push하고
-        //question innerText 변경 answer1,2,3 innerText 변경
-    }
+const question = document.getElementsByClassName("question");
+const checkBox = document.getElementsByClassName("checkBox");
+const answer1 = document.getElementById("answer1");
+answer1.addEventListener("click", function (event) {
+  answer1.innerHTML = qna[0].a[1].answer;
 });
+
+const qna = [
+  {
+    q: `1`,
+    a: [{ answer: "a" }, { answer: "b" }, { answer: "c" }],
+  },
+  {
+    q: `2`,
+    a: [{ answer: "d" }, { answer: "e" }, { answer: "f" }],
+  },
+  {
+    q: `3`,
+    a: [{ answer: "g" }, { answer: "h" }, { answer: "i" }],
+  },
+];
