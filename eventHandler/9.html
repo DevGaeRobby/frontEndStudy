@@ -101,8 +101,6 @@
         ],
       };
 
-      let currentTab = 0;
-
       const hobbyName = document.querySelector(".hobbyName");
       const hobbyInfo = document.querySelector(".hobbyInfo");
       const hobbyInfolist = document.querySelector(".hobbyInfolist");
@@ -129,22 +127,35 @@
         nextBtn.disabled = index === obj.hobbies.length - 1;
       }
 
-      function changeTab(isNext) {
-        currentTab += isNext ? 1 : -1;
-        displayTab(currentTab);
+      function tabUtill() {
+        let currentTab = 0;
+
+        function changeTab(isNext) {
+          currentTab += isNext ? 1 : -1;
+        }
+
+        return {
+          changeTab,
+          currentTab: () => currentTab,
+        };
       }
 
-      function handleClickPrev() {
-        changeTab(false);
-      }
-      function handleClickNext() {
-        changeTab(true);
+      const tab = tabUtill();
+
+      function handleClickBtn(event) {
+        if (event.target === prevBtn) {
+          tab.changeTab(false);
+          displayTab(tab.currentTab());
+        } else if (event.target === nextBtn) {
+          tab.changeTab(true);
+          displayTab(tab.currentTab());
+        }
       }
 
-      prevBtn.addEventListener("click", handleClickPrev);
-      nextBtn.addEventListener("click", handleClickNext);
+      prevBtn.addEventListener("click", handleClickBtn);
+      nextBtn.addEventListener("click", handleClickBtn);
 
-      displayTab(currentTab);
+      displayTab(tab.currentTab());
     </script>
   </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="toDoList.css" />
+    <title>toDoList</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="app">
+        <div class="head-div">
+          <h1>일정관리</h1>
+        </div>
+        <div class="input-div">
+          <input
+            type="text"
+            class="inputbox"
+            placeholder="할 일을 입력하세요"
+          />
+          <button class="addbutton">+</button>
+        </div>
+        <div class="body-div">
+          <ul class="list-container">
+            <div class="list-box">
+              <div>
+                <li class="checked">
+                  <input type="checkbox" class="checkbox" /> 리액트 기초
+                  알아보기
+                </li>
+              </div>
+              <div>
+                <button class="edit-btn"><img src="editbtn.png" /></button>
+                <button class="delete-btn"><img src="deletebtn.png" /></button>
+              </div>
+            </div>
+            <div class="list-box">
+              <li>
+                <input type="checkbox" class="checkbox" /> 컴포넌트 스타일링
+                하기
+              </li>
+              <div>
+                <button class="edit-btn"><img src="editbtn.png" /></button>
+                <button class="delete-btn"><img src="deletebtn.png" /></button>
+              </div>
+            </div>
+            <div class="list-box">
+              <li>
+                <input type="checkbox" class="checkbox" /> 투두리스트 만들기
+              </li>
+              <div>
+                <button class="edit-btn"><img src="editbtn.png" /></button>
+                <button class="delete-btn"><img src="deletebtn.png" /></button>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="toDoList.js"></script>
+  </body>
+</html>
